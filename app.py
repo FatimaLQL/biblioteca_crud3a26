@@ -16,9 +16,9 @@ def main():
                 print ("--------------------------------------")
 
                 print (
-                    f"ID: {libro.id}, Título: {libro.título},"
-                    f"Autor: {libro.autor}, ISBN: {libro.isbn},"
-                    f"Disponible: {'Si' if libro.disponible else 'No'}"
+                    f"ID: {libro.id}, Título: {libro.titulo},"
+                    f" Autor: {libro.autor}, ISBN: {libro.isbn},"
+                    f" Disponible: {'Si' if libro.disponible else 'No'}"
                 )
                 print ("--------------------------------------")
         print("\n Conexion exitosa a ala base de datos")
