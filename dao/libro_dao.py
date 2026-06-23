@@ -31,13 +31,14 @@ class LibroDAO:
     def insertar(self, libro):
         conexion = Conexion.obtener_conexion()
         cursor = conexion.cursor()
-        sql = """"
+        sql = """
         INSERT INTO libro (id, titulo, autor, isbn, disponible)
         VALUES (%s, %s, %s, %s,%s)
         """
         cursor.execute(
             sql, 
-            (libro.titulo,
+            (libro.id,
+             libro.titulo,
              libro.autor,
              libro.isbn,
              libro.disponible
